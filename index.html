@@ -509,6 +509,20 @@
               </div>
             </div>
 
+            <!-- Question 7 (NEW: AI Wish Capability) -->
+            <div class="question-group pt-2" data-q="ai_wish_capability">
+              <label for="ai_wish_capability" class="block font-serif text-base font-bold text-navy-900 mb-1">
+                Q7. AI tools se aap aisa kaunsa specific kaam karwana chahte ho jo aap abhi nahi kar paate? <span class="text-rose-600">*</span>
+              </label>
+              <p class="text-xs text-slate-500 italic mb-3">
+                (Aisa kya task hai jo aap chahte ho AI kar de, lekin current AI tools like ChatGPT/Gemini use perfectly nahi kar pate?)
+              </p>
+              <div class="relative">
+                <textarea id="ai_wish_capability" rows="2" placeholder="Describe the AI capability you wish existed for legal/student work..." class="w-full rounded-lg p-3.5 text-sm resize-none" oninput="updateCharCount('ai_wish_capability', 'ai_wish_counter')"></textarea>
+                <div id="ai_wish_counter" class="text-right text-[11px] text-slate-500 mt-1 font-mono">0 chars</div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -521,10 +535,10 @@
 
           <div class="space-y-7">
 
-            <!-- Question 7 (Checkbox - max 3) -->
+            <!-- Question 8 (Checkbox - max 3) -->
             <div class="question-group" data-q="internship_challenges" data-type="multi" data-max="3">
               <label class="block font-serif text-base font-bold text-navy-900 mb-1">
-                Q7. Internship ya legal job dhundhte time aapko sabse difficult kya lagta hai? <span class="text-rose-600">*</span>
+                Q8. Internship ya legal job dhundhte time aapko sabse difficult kya lagta hai? <span class="text-rose-600">*</span>
               </label>
               <span class="block text-xs text-amber-700 font-semibold mb-3">(Select up to 3 options)</span>
 
@@ -583,10 +597,10 @@
               </div>
             </div>
 
-            <!-- Question 8 (Radio - Conditional trigger) -->
+            <!-- Question 9 (Radio - Conditional trigger) -->
             <div class="question-group pt-2" data-q="outstation_travel" data-type="single">
               <label class="block font-serif text-base font-bold text-navy-900 mb-3">
-                Q8. Kya aapne internship ke liye kabhi apne home city se bahar (Delhi, Mumbai, etc.) travel/stay kiya hai? <span class="text-rose-600">*</span>
+                Q9. Kya aapne internship ke liye kabhi apne home city se bahar (Delhi, Mumbai, etc.) travel/stay kiya hai? <span class="text-rose-600">*</span>
               </label>
               <div class="space-y-2.5">
                 <button type="button" class="option-card w-full p-3.5 text-left rounded-lg flex items-start space-x-3 cursor-pointer group" data-value="Yes">
@@ -612,13 +626,13 @@
               </div>
             </div>
 
-            <!-- Conditional Container for Q9 & Q10 -->
+            <!-- Conditional Container for Q10 & Q11 -->
             <div id="outstation-conditional-container" class="space-y-7 hidden pl-4 border-l-2 border-amber-400 bg-amber-50/50 p-4 rounded-r-lg">
 
-              <!-- Question 9 (Checkbox - Select all) -->
+              <!-- Question 10 (Checkbox - Select all) -->
               <div class="question-group" data-q="accommodation_problems" data-type="multi">
                 <label class="block font-serif text-base font-bold text-navy-900 mb-1">
-                  Q9. Outstation internship ke time accommodation dhundhne mein kya problem hui thi?
+                  Q10. Outstation internship ke time accommodation dhundhne mein kya problem hui thi?
                 </label>
                 <span class="block text-xs text-slate-500 font-medium mb-3">(Select all that apply)</span>
 
@@ -670,10 +684,10 @@
                 </div>
               </div>
 
-              <!-- Question 10 (Textarea) -->
+              <!-- Question 11 (Textarea) -->
               <div class="question-group pt-2" data-q="accommodation_solution">
                 <label for="accommodation_solution" class="block font-serif text-base font-bold text-navy-900 mb-1">
-                  Q10. Aapne apna accommodation issue exactly kaise solve kiya, aur us process mein sabse zyada kya frustrating tha?
+                  Q11. Aapne apna accommodation issue exactly kaise solve kiya, aur us process mein sabse zyada kya frustrating tha?
                 </label>
                 <div class="relative">
                   <textarea id="accommodation_solution" rows="2" placeholder="Tell us how you found stay & your frustration..." class="w-full rounded-lg p-3.5 text-sm resize-none" oninput="updateCharCount('accommodation_solution', 'accommodation_solution_counter')"></textarea>
@@ -695,10 +709,10 @@
 
           <div class="space-y-7">
 
-            <!-- Question 11 (Checkbox - Select all) -->
+            <!-- Question 12 (Checkbox - Select all) -->
             <div class="question-group" data-q="document_review_challenges" data-type="multi">
               <label class="block font-serif text-base font-bold text-navy-900 mb-1">
-                Q11. Long legal documents (FIR, Charge Sheet, Judgments, Contracts) ko read/review karte time sabse difficult kya lagta hai? <span class="text-rose-600">*</span>
+                Q12. Long legal documents (FIR, Charge Sheet, Judgments, Contracts) ko read/review karte time sabse difficult kya lagta hai? <span class="text-rose-600">*</span>
               </label>
               <span class="block text-xs text-slate-500 font-medium mb-3">(Select all that apply)</span>
 
@@ -750,10 +764,10 @@
               </div>
             </div>
 
-            <!-- Question 12 (Updated Radio Pitch) -->
+            <!-- Question 13 (Radio Pitch) -->
             <div class="question-group pt-2" data-q="tool_value_proposition" data-type="single">
               <label class="block font-serif text-base font-bold text-navy-900 mb-2">
-                Q12. Agar ek aisa secure software ho jahan aap 500+ pages ki messy FIR, Charge Sheet ya Trial Record upload karein, aur wo turant: <span class="text-rose-600">*</span>
+                Q13. Agar ek aisa secure software ho jahan aap 500+ pages ki messy FIR, Charge Sheet ya Trial Record upload karein, aur wo turant: <span class="text-rose-600">*</span>
               </label>
               
               <div class="p-4 rounded-lg bg-slate-50 border-l-4 border-navy-900 text-xs sm:text-sm text-slate-700 space-y-2 mb-3 font-serif">
@@ -810,10 +824,10 @@
 
           <div class="space-y-7">
 
-            <!-- Question 13 (Broken norm) -->
+            <!-- Question 14 (Broken norm) -->
             <div class="question-group" data-q="broken_norm">
               <label for="broken_norm" class="block font-serif text-base font-bold text-navy-900 mb-1">
-                Q13. Legal field mein aisi kaunsi cheez hai jise sab log “normal” maan chuke hain, but actually woh completely broken hai aur fix honi chahiye? <span class="text-rose-600">*</span>
+                Q14. Legal field mein aisi kaunsi cheez hai jise sab log “normal” maan chuke hain, but actually woh completely broken hai aur fix honi chahiye? <span class="text-rose-600">*</span>
               </label>
               <div class="relative">
                 <textarea id="broken_norm" rows="3" placeholder="Share your perspective on broken legal conventions or student struggles..." class="w-full rounded-lg p-3.5 text-sm resize-none" oninput="updateCharCount('broken_norm', 'broken_norm_counter')"></textarea>
@@ -821,10 +835,10 @@
               </div>
             </div>
 
-            <!-- Question 14 (Magic wand) -->
+            <!-- Question 15 (Magic wand) -->
             <div class="question-group pt-2" data-q="magic_wand">
               <label for="magic_wand" class="block font-serif text-base font-bold text-navy-900 mb-1">
-                Q14. Agar aap ek "Magic Wand" se apni legal/student life ka sirf EK task completely automate kar sakte, toh woh kya hota? (Exact batao, ideal solution kaisa dikhna chahiye?) <span class="text-rose-600">*</span>
+                Q15. Agar aap ek "Magic Wand" se apni legal/student life ka sirf EK task completely automate kar sakte, toh woh kya hota? (Exact batao, ideal solution kaisa dikhna chahiye?) <span class="text-rose-600">*</span>
               </label>
               <div class="relative">
                 <textarea id="magic_wand" rows="3" placeholder="Describe your dream tool or solution..." class="w-full rounded-lg p-3.5 text-sm resize-none" oninput="updateCharCount('magic_wand', 'magic_wand_counter')"></textarea>
@@ -832,10 +846,10 @@
               </div>
             </div>
 
-            <!-- Question 15 (NEW: Unasked Problem/Need Textarea) -->
+            <!-- Question 16 (Fixed typo: Is poore form mein...) -->
             <div class="question-group pt-2" data-q="unasked_problem_need">
               <label for="unasked_problem_need" class="block font-serif text-base font-bold text-navy-900 mb-1">
-                Q15. Is poorform mein agar koi aisi problem, need ya requirement missed reh gayi hai jo aap daily face karte ho, toh kripya yahan khulkar batayein (Tech tool, daily workflow, ya general legal life mein aapko kya chahiye)?
+                Q16. Is poore form mein agar koi aisi problem, need ya requirement missed reh gayi hai jo aap daily face karte ho, toh kripya yahan khulkar batayein (Tech tool, daily workflow, ya general legal life mein aapko kya chahiye)?
               </label>
               <p class="text-xs text-slate-500 italic mb-2">
                 (Aapki requirement/demand humare liye sabse valuable feedback hai!)
@@ -846,10 +860,10 @@
               </div>
             </div>
 
-            <!-- Question 16 (Optional Input) -->
+            <!-- Question 17 (Optional Input) -->
             <div class="question-group pt-2" data-q="contact_info">
               <label for="contact_info" class="block font-serif text-base font-bold text-navy-900 mb-1">
-                Q16. (Optional) Hum exactly yahi problems solve karne ke liye platforms bana rahe hain. Agar free early beta access chahiye, ya apne experience par 10 min baat karni hai, toh apna Email ya WhatsApp number daal do!
+                Q17. (Optional) Hum exactly yahi problems solve karne ke liye platforms bana rahe hain. Agar free early beta access chahiye, ya apne experience par 10 min baat karni hai, toh apna Email ya WhatsApp number daal do!
               </label>
               <input type="text" id="contact_info" placeholder="Email Address or Phone / WhatsApp Number" class="w-full rounded-lg px-4 py-3 text-sm" />
             </div>
@@ -926,7 +940,7 @@
 
     let currentStep = 1;
     const totalSteps = 5;
-    const STORAGE_KEY = "master_legal_survey_draft_v3";
+    const STORAGE_KEY = "master_legal_survey_draft_v4";
 
     // Form state structure
     let formData = {
@@ -940,6 +954,7 @@
       ai_usage: "",
       ai_frustration: [],
       ai_frustration_other: "",
+      ai_wish_capability: "",
       internship_challenges: [],
       internship_challenges_other: "",
       outstation_travel: "",
@@ -972,6 +987,7 @@
       formData.time_waster_tasks_other = document.getElementById("time_waster_tasks-other")?.value || "";
       formData.ai_usage = document.getElementById("ai_usage")?.value || "";
       formData.ai_frustration_other = document.getElementById("ai_frustration-other")?.value || "";
+      formData.ai_wish_capability = document.getElementById("ai_wish_capability")?.value || "";
       formData.internship_challenges_other = document.getElementById("internship_challenges-other")?.value || "";
       formData.accommodation_problems_other = document.getElementById("accommodation_problems-other")?.value || "";
       formData.accommodation_solution = document.getElementById("accommodation_solution")?.value || "";
@@ -997,7 +1013,7 @@
           formData = { ...formData, ...JSON.parse(saved) };
           
           // Restore text inputs
-          ["role-other", "practice_area-other", "difficult_task_story", "time_waster_tasks-other", "ai_usage", "ai_frustration-other", "internship_challenges-other", "accommodation_problems-other", "accommodation_solution", "document_review_challenges-other", "broken_norm", "magic_wand", "unasked_problem_need", "contact_info"].forEach(id => {
+          ["role-other", "practice_area-other", "difficult_task_story", "time_waster_tasks-other", "ai_usage", "ai_frustration-other", "ai_wish_capability", "internship_challenges-other", "accommodation_problems-other", "accommodation_solution", "document_review_challenges-other", "broken_norm", "magic_wand", "unasked_problem_need", "contact_info"].forEach(id => {
             const el = document.getElementById(id);
             const key = id.replace(/-/g, "_");
             if (el && formData[key] !== undefined) {
@@ -1008,6 +1024,7 @@
           // Update character counters
           updateCharCount("difficult_task_story", "difficult_task_counter");
           updateCharCount("ai_usage", "ai_usage_counter");
+          updateCharCount("ai_wish_capability", "ai_wish_counter");
           updateCharCount("accommodation_solution", "accommodation_solution_counter");
           updateCharCount("broken_norm", "broken_norm_counter");
           updateCharCount("magic_wand", "magic_wand_counter");
@@ -1045,7 +1062,7 @@
         checkOtherVisibility(qName);
       });
 
-      // Check Q8 outstation conditional container visibility
+      // Check Q9 outstation conditional container visibility
       toggleOutstationConditional(formData.outstation_travel === "Yes");
     }
 
@@ -1084,7 +1101,7 @@
               cards.forEach(c => c.classList.remove("selected"));
               card.classList.add("selected");
 
-              // Handle Q8 Outstation conditional showing
+              // Handle Q9 Outstation conditional showing
               if (qName === "outstation_travel") {
                 toggleOutstationConditional(val === "Yes");
               }
@@ -1124,7 +1141,7 @@
     }
 
     function setupOtherInputs() {
-      ["role-other", "practice_area-other", "difficult_task_story", "time_waster_tasks-other", "ai_usage", "ai_frustration-other", "internship_challenges-other", "accommodation_problems-other", "accommodation_solution", "document_review_challenges-other", "broken_norm", "magic_wand", "unasked_problem_need", "contact_info"].forEach(id => {
+      ["role-other", "practice_area-other", "difficult_task_story", "time_waster_tasks-other", "ai_usage", "ai_frustration-other", "ai_wish_capability", "internship_challenges-other", "accommodation_problems-other", "accommodation_solution", "document_review_challenges-other", "broken_norm", "magic_wand", "unasked_problem_need", "contact_info"].forEach(id => {
         const el = document.getElementById(id);
         if (el) {
           el.addEventListener("input", saveDraft);
@@ -1185,31 +1202,35 @@
           showError("Please select at least one AI frustration in Q6.");
           return false;
         }
+        if (!document.getElementById("ai_wish_capability").value.trim()) {
+          showError("Please answer Q7 describing what you wish AI tools could do.");
+          return false;
+        }
       } else if (currentStep === 3) {
         if (!formData.internship_challenges || formData.internship_challenges.length === 0) {
-          showError("Please select internship challenges in Q7.");
+          showError("Please select internship challenges in Q8.");
           return false;
         }
         if (!formData.outstation_travel) {
-          showError("Please answer Q8 about outstation travel/stay.");
+          showError("Please answer Q9 about outstation travel/stay.");
           return false;
         }
       } else if (currentStep === 4) {
         if (!formData.document_review_challenges || formData.document_review_challenges.length === 0) {
-          showError("Please select document review challenges in Q11.");
+          showError("Please select document review challenges in Q12.");
           return false;
         }
         if (!formData.tool_value_proposition) {
-          showError("Please rate the tool value in Q12.");
+          showError("Please rate the tool value in Q13.");
           return false;
         }
       } else if (currentStep === 5) {
         if (!document.getElementById("broken_norm").value.trim()) {
-          showError("Please answer Q13 regarding broken norms.");
+          showError("Please answer Q14 regarding broken norms.");
           return false;
         }
         if (!document.getElementById("magic_wand").value.trim()) {
-          showError("Please answer Q14 about your Magic Wand task.");
+          showError("Please answer Q15 about your Magic Wand task.");
           return false;
         }
       }
@@ -1291,6 +1312,7 @@
         timeWasterTasks: formatSelection(formData.time_waster_tasks, formData.time_waster_tasks_other),
         aiUsage: formData.ai_usage,
         aiFrustration: formatSelection(formData.ai_frustration, formData.ai_frustration_other),
+        aiWishCapability: formData.ai_wish_capability,
         internshipChallenges: formatSelection(formData.internship_challenges, formData.internship_challenges_other),
         outstationTravel: formData.outstation_travel,
         accommodationProblems: formData.outstation_travel === "Yes" ? formatSelection(formData.accommodation_problems, formData.accommodation_problems_other) : "N/A",
